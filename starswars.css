@@ -1,0 +1,680 @@
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    color: #fff;
+}
+
+body{
+   
+   
+   
+    background-image: url('./assets/Stars_Sky_454921.jpg');
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    padding-inline: 16px;
+    /* display: flex; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu{
+    width: 50%;
+    height: 70px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-list{
+   display: flex;
+   gap: 32px;
+   list-style: none;
+}
+.nav-list .home{
+    font-size: 18px;
+    color: #fff;
+    padding-block: 16px;
+}
+
+.home{
+    font-family: 'Star Wars', sans-serif;
+    font-size: 1rem;
+
+}
+
+.logo{
+    width: 250px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo-img{
+    width: 40%;
+    height: auto;
+
+}
+.logo-text{
+    font-family: 'Star Wars', sans-serif;
+    font-size: 1rem;
+
+}
+
+.social-media{
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.midas-sociais{
+    font-size: 1.2rem;
+
+}
+
+.midas-sociais:hover{
+    color:gold
+}
+
+.main-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+
+}
+
+.person{
+    font-family: 'Star Wars', sans-serif;
+    color: gold;
+    font-weight: 300;
+    margin: 21px;
+    /* position: relative;
+    left: 2%;
+    right: 2%; */
+
+}
+
+.main-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 10px;
+    padding: 0 20px;
+
+}
+
+.cards{
+    width: 230px;
+    height: 470px;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 5px;
+}
+.cards:hover{
+    transform: scale(1.02);
+}
+
+.character-name-bg{
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+
+}
+
+.character-name{
+    font-family: 'Star Wars', sans-serif;
+    color:gold;
+    font-size: 1rem;
+}
+
+.buttons {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#back-button  {
+    width: 70px;
+    height: 25px;
+    background-color: gold;
+    color: #000;
+    font-weight: 700;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid #000;
+    outline: none;
+    transition: 0.3s;
+}
+#next-button {
+    width: 70px;
+    height: 25px;
+    background-color: gold;
+    color: #000;
+    font-weight: 700;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid #000;
+    outline: none;
+    transition: 0.3s;
+}
+
+#back-button :hover{
+    background-color: #000;
+    color: gold;
+
+}
+#next-button:hover{
+    background-color: #000;
+    color: gold;
+}
+#back-button{
+    visibility: hidden;
+
+}
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 49px;
+    margin-bottom: 47px;
+
+
+}
+
+.footer-logo{
+    font-family: 'Star Wars', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+
+}
+.copyrigth{
+    font-weight: 500;
+}
+
+.modal {
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+
+}
+
+
+.modal-content {
+    
+    width: 25vw;
+    height: 70vh;
+    background-color: #0d0d0d;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 30px 10px;
+    align-items: center;
+}
+
+.character-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-position: 50% 10%;
+    background-size: cover;
+
+}
+
+.character-details{
+    font-family: 'Star Wars', sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    color: gold;
+}
+
+
+
+.social-media-mobile {
+    background-color: #0000008c;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    
+    align-items: center;
+    width: 100%;
+    display: flex;
+    
+    top:68px;
+    left: 0;
+   
+    height: 100vh;
+
+   
+
+
+}
+
+.social-media-mobile  div a{
+    
+    color: #fff;
+    text-decoration: none;
+    display: flex; 
+    flex-direction: column;
+    padding: 20px 30px;
+
+   
+
+}
+
+
+.cards{
+    background-repeat: no-repeat;
+}
+.contact-conteiner{
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 121px;
+    margin-bottom: 181px;
+      
+}
+ .diver{
+    background: rgba(255, 255, 255, 0.04); /* Fundo semi-transparente */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+    backdrop-filter: blur(10px); /* Desfoque de fundo */
+    -webkit-backdrop-filter: blur(10px); /* Suporte para navegadores WebKit */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borda semi-transparente */
+    padding: 20px; /* Espaçamento interno */
+    width: 19em;
+    height: max-content;
+}
+.contact-conteiner form{
+    display: flex;
+    flex-direction: column;
+}
+.titulo-contato{
+    display: flex;
+    justify-content: center;
+    font-family: 'Star Wars', sans-serif;
+    margin-bottom: 20px;
+    color: gold;
+    font-weight: 300;
+}
+ .bottom-contact{
+    width: 103px;
+    height: 50px;
+    color: #000;
+    font-weight: 700;
+    background-color: gold;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    padding: 16px;
+    transition: 0.5s;
+ }
+ .bottom-contact:hover{
+    color: gold;
+    background-color: #000;
+ }
+ .botaoContent{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 16%;
+   
+    margin-bottom: 23px
+ }
+ .contName{
+    background: transparent; /* Fundo transparente */
+    border: none; /* Sem bordas */
+    outline: none; /* Sem outline ao focar */
+    padding: 5px 0; /* Espaçamento interno no topo e embaixo */
+    font-size: 16px; /* Tamanho da fonte */
+    color: white; /* Cor do texto */
+    border-bottom: 2px solid black; /* Linha na parte de baixo */
+ }
+ .contName:hover{
+    color:#c4c4c4; /* Cor do texto do placeholder */
+    opacity: 0.5; /* Opacidade do placeholder */
+ }
+ .conttext{
+    background: transparent; /* Fundo transparente */
+    border: none; /* Sem bordas */
+    outline: none; /* Sem outline ao focar */
+    padding: 5px 0; /* Espaçamento interno no topo e embaixo */
+    font-size: 16px; /* Tamanho da fonte */
+    color: black; /* Cor do texto */
+    border-bottom: 2px solid black; /* Linha na parte de baixo */
+ }
+ .conttext:hover{
+    color: grey; /* Cor do texto do placeholder */
+    opacity: 0.5; /* Opacidade do placeholder */
+ }
+ #Assunto-contato{
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 5px 0;
+    font-size: 16px;
+    color: white;
+    border-bottom: 2px solid black;
+    width: 100%;
+    resize: none;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-bottom: 42px;
+ }
+ #Assunto-contato:hover{
+    color:#c4c4c4; /* Cor do texto do placeholder */
+    opacity: 0.5; /* Opacidade do placeholder */
+ }
+ .contLabelNa{
+    font-family: 'Star Wars', sans-serif;
+  
+    color: gold;
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 8px;
+ }
+ .hidden {
+    display: none;
+  }
+  #mensagemEnviada {
+    position: fixed; /* Fixa a mensagem no topo da tela */
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    background-color: green; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+    font-size: 16px; /* Tamanho da fonte */
+    z-index: 1000; /* Garante que a mensagem fique sobre outros elementos */
+  }
+ 
+
+.projetos-menu {
+    
+    display: flex;
+    border-radius: 11px;
+    align-items: center;
+    border: 2px solid #fff;
+    width: 9em;
+    height: 2em;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+.projetoTexto{
+    color: rgb(4, 204, 191);
+}
+
+.projetos-menu :hover{
+    color: #3f11b3;
+    font-size: 17px;
+    
+}
+.caixa-projetos{
+    
+    width: 8em;
+    background: linear-gradient(to right, #29467b, black, #29467b);
+    position: absolute;
+    right: 1.9%;
+    top: 7%;
+    border-radius: 14px;
+    overflow: hidden;
+}
+.caixa-projetos-hide{
+    transition: 1s; 
+    height: 0;
+}
+.caixa-projetos-show{
+    transition: 1s;
+    height: 10em;
+}
+
+.li-projetos{
+    display: flex;
+    flex-direction: column;
+    
+    height: 9em;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Oswald', sans-serif;;
+
+   
+}
+.li-projetos a{
+    color: #fff;
+    text-decoration: none;
+}
+.voltar{
+    position: fixed;
+    bottom: 47px;
+    right: 32px;
+    color: #0076ff;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 63px;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+.voltar:hover {
+  
+    color: aqua; /* Alterar cor ao passar o mouse */
+  }
+
+
+.botao-menu{
+    display: none;
+}
+.boxAviso{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    
+    
+
+}
+.boxOculto{
+    display: none;
+}
+.caixaAviso{
+    width: 304px;
+    height: 455px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: 22px;
+    text-align: justify;
+   
+}
+.fa-times{
+    color: #fff;
+    font-size: 34px;
+    text-align: end;
+}
+.fa-times:hover{
+    color: #ababbd;
+    font-size: 38px;
+}
+.texto-aviso > .fa-whatsapp{
+    display: flex;
+    justify-content: center
+}
+.closeWind{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+}
+.iconeclose{
+    border-radius: 100%; 
+    width: 40px; height: 40px; 
+    background-color: rgba(0, 0, 0, 0.262);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titleAviso{
+    text-align: center;
+    color: #fb0b0b;
+    font-size: 35px;
+    margin-bottom: 19px;
+}
+.fa-whatsapp{
+    color: green;
+    margin-top: 34px;
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-whatsapp:hover{
+    font-size: 39px;
+}
+.WhatappRed{
+    display: flex;
+    justify-content: center;
+}
+.iconeTriangle{
+   color: yellow;
+   visibility: visible;
+}
+.esconder{
+    visibility: hidden;
+}
+.exclamation{
+    color: #ffff0000;
+}
+
+  @media screen and (max-width:480px) {
+    .menu{
+        display: none;
+    }
+    header{
+        display: flex;
+        width: 100%;
+        height: 80px;
+        align-items: center;
+       
+    }
+    
+    .botao-menu{
+        display: block;
+    }
+    .barrasMenu{
+        font-size: 30px;
+        transition: transform 0.5s ease;
+    }
+    .menu-mostrar{
+        font-size: 30px;
+        transition: transform 0.5s ease;
+        transform: rotate(90deg);
+        color: rgb(4, 204, 191);
+    }
+    
+    .titulo-contato{
+        display: flex;
+        align-items: center;
+
+    }
+    .person{
+        width: 77%;
+        position: static;
+    }
+    .buttons{
+        margin-top: 101px;
+    }
+    .diver{
+        width: 63%;
+    }
+    .bottom-contact{
+        font-size: 18px;
+    }
+    .footer-logo{
+        text-align: center;
+    }
+    #mensagemEnviada{
+        text-align: center;
+    }
+    .character-details{
+        font-size: 13px;
+    }
+    .modal-content{
+       width: 87vw;
+       height: 62vh;
+    }
+    .projetos-menu{
+        display: none;
+    }
+    .caixa-projetos-hide{
+        transition: 1s; 
+        width: 0;
+    }
+    .caixa-projetos-show{
+        transition: 1s;
+        width: 8em;
+    }
+    .caixa-projetos{
+        height: 10em;
+        
+        
+        top: 10%;
+       
+       
+    }
+    .li-projetos{
+        white-space: nowrap;
+    }
+  }

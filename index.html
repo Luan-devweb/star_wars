@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars characters| Luan Rodrigues</title>
+    <link rel="stylesheet" href="./starswars.css">
+    <link rel="shortcut icon" href="./assets/purepng.com-star-warsstar-warsspace-opera-franchisefilm-star-warswarsstar-1701527826657skhtj.png" type="image/x-icon">
+    
+</head>
+<body>
+    <div class="boxOculto" id="box">
+        <div class="caixaAviso" >
+            <div class="closeWind" ><div class="iconeclose" onclick="closebox()"><i class="fa fa-times" aria-hidden="true" ></i></div></div>
+            <h2 class="titleAviso" >Aviso <i class="fa fa-exclamation-triangle  iconeTriangle" aria-hidden="true" id="exclamation-triangle"></i></h2>
+            <span class="texto-aviso">
+                Estas paginas ainda não estão disponiveis ao acesso, elas estão em desenvolvmento.
+            <p style="margin-top: 12px;">O 'Portifólio' já está disponivel na versão desktop clicle
+                <a href="http://luan-devweb.store" target="_blank" style="color: rgb(47, 185, 185);">aqui</a>
+            </p>
+            <h5 style="margin-top: 37px; font-weight: 400;">Para sugestões entre em contato pelo WhatsApp</h5>
+               <a href="https://wa.me/5533999787311" target="_blank" class="WhatappRed"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+            </span>
+        </div>
+    </div>
+ 
+  
+  <header>
+    
+       <a href="./index.html">
+
+          <div class="logo">
+             <img src="./assets/Tpiqrsm.jpg" alt="logo" class="logo-img"/>
+             <span class="logo-text">characters</span>
+          </div>
+
+    </a>
+    <div class="projetos-menu" onclick="projetos()" >
+        <span class="projetoTexto">Todos os projetos▼</span>
+    </div>
+    
+    
+    <div class="botao-menu">
+        <i class="fa-solid fa-bars barrasMenu " onclick="menuMobile()" id="menuHamburguer" ></i>
+    </div>
+    
+</header>
+    
+    
+<div class="caixa-projetos hideen caixa-projetos-hide " id="all-projects" >
+    <div></div>
+    <li class="li-projetos" style="cursor: pointer;">
+       
+            <a href="http://Luan-devweb.store" target="_blank">Portifólio</a>
+            <ol onclick="ativarBox()">Batman</ol>
+            <ol onclick="ativarBox()">Homen Aranha</ol>
+            <ol onclick="ativarBox()">calculadora</ol>
+        
+    </li>
+</div>
+
+   
+    
+    
+    
+  
+  
+
+
+
+
+    <div class="main-container">
+         <h2 class="person">Conheca todos os perdonagens de Star Wars em um so lugar</h2>
+
+         <div class="main-content" id="main-content" ></div>
+         
+         <div class="modal" id="modal" onclick="hideModal() ">
+            <div class="modal-content" id="modal-content"></div>
+         </div>
+    
+     
+
+      <div class="buttons">
+         <button id="back-button" disabled>Anterior</button>
+         <button id="next-button" disabled>Próxima</button>
+
+
+      </div>
+    </div>
+
+    <div class="contact-conteiner">
+        <div class="diver" id="scroll-contato">
+            <h2 class="titulo-contato">Contate-nos</h2>
+            <form action="" >
+                <label for="" class="contLabelNa">Nome</label>
+                <input type="text" class="contName" id="textinput">
+                <label for="" class="contLabelNa">E-mail</label>
+                <input type="email" class="contName" id="textinput">
+                <label for="name" class="contLabelNa">Assunto</label>
+                <textarea name="" id="Assunto-contato" class="conttext" placeholder="Digite aqui..."></textarea>
+                
+               
+            </form>
+            <div class="botaoContent">
+                <button class="bottom-contact" id="submitBotao">Enviar</button>
+            </div>
+        </div>
+
+    </div>
+    <div id="mensagemEnviada" class="hidden">Enviado com sucesso!!!</div>
+    
+    
+   <footer>
+    <p class="footer-logo">Star Wars Characters</p>
+    <p class="copyrigth">Desenvolvido por &copy; Luan Rodrigues</p>
+    <div class="social-media">
+        <a target="_blank" href="https://www.instagram.com/luanrodrigues.ferreira?igsh=ZDV6Nmt2ZWZpazBm">
+      
+            <i class="fa-brands fa-instagram midas-sociais"></i>
+        </a>
+         
+        <a target="_blank" href="https://www.facebook.com/permalink.php?story_fbid=pfbid04zjkv93Qyqt486mcFKLpVsBTCwJih2xnaM3FeXRrSJ3ppWeV2g414KtoxTGSvrAKl&id=100081201398550">
+      
+            <i class="fa-brands fa-facebook-f midas-sociais"></i>
+        </a>
+        <a target="_blank" href="https://github.com/Luan-devweb">
+      
+            <i class="fa-brands fa-github midas-sociais"></i>
+        </a>  
+        <a target="_blank" href="https://www.linkedin.com/in/luan-rodrigues-0a3996261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+      
+            <i class="fa-brands fa-linkedin-in midas-sociais"></i>
+        </a> 
+      
+    </div>
+
+   </footer>
+       
+    <script src="https://kit.fontawesome.com/3c0e6fe7c9.js" crossorigin="anonymous"></script>
+    <script src="./starwars.js"></script>
+    
+</body>
+</html>
